@@ -1,0 +1,28 @@
+{
+  "name": "alphonse92-microservice-lib",
+  "version": "1.0.0",
+  "description": "Library for Javascript prerender microservice ecosystem https://github.com/alphonse92/javascript-prerender/",
+  "main": "index.js",
+  "directories": {
+    "lib": "lib"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/alphonse92/microservice-lib.git"
+  },
+  "keywords": [
+    "javascript",
+    "prerender",
+    "library",
+    "alphonse92"
+  ],
+  "author": "Eliecer Alejandro Molina Vergel",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/alphonse92/microservice-lib/issues"
+  },
+  "homepage": "https://github.com/alphonse92/microservice-lib#readme"
+}
