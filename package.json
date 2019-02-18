@@ -1,28 +1,51 @@
 {
-  "name": "@alphonse92/lib",
+  "name": "@alphonse92/ms-lib",
   "version": "1.0.0",
-  "description": "Library for Javascript prerender microservice ecosystem https://github.com/alphonse92/javascript-prerender/",
+  "description": "Lib to build microservices easily",
   "main": "index.js",
   "directories": {
     "lib": "lib"
   },
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "mocha test"
   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/alphonse92/microservice-lib.git"
   },
   "keywords": [
-    "javascript",
-    "prerender",
-    "library",
-    "alphonse92"
+    "microservice",
+    "lib",
+    "build",
+    "ms",
+    "redis",
+    "broker",
+    "gateway"
   ],
   "author": "Eliecer Alejandro Molina Vergel",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/alphonse92/microservice-lib/issues"
   },
-  "homepage": "https://github.com/alphonse92/microservice-lib#readme"
+  "homepage": "https://github.com/alphonse92/microservice-lib#readme",
+  "dependencies": {
+    "body-parser": "^1.18.3",
+    "circuit-breaker": "0.0.4",
+    "express": "^4.16.4",
+    "express-winston": "^3.1.0",
+    "lodash": "^4.17.11",
+    "multer": "^1.4.1",
+    "redis": "^2.8.0",
+    "request": "^2.88.0",
+    "request-promise-native": "^1.0.5",
+    "winston": "^3.2.1"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.2.3",
+    "@babel/core": "^7.2.2",
+    "@babel/node": "^7.2.2",
+    "@babel/preset-env": "^7.2.3",
+    "@babel/register": "^7.0.0",
+    "nodemon": "^1.18.9"
+  }
 }
