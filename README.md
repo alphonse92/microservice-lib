@@ -2,4 +2,4 @@
 
 Library used at: https://github.com/alphonse92/javascript-prerender/
 
-char
+char  a
