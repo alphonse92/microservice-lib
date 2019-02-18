@@ -1,1 +1,1 @@
-export * from './lib'
+module.exports = require('./dist/bundle')
