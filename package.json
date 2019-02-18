@@ -8,7 +8,7 @@
   },
   "scripts": {
     "test": "mocha test",
-    "build": "webpack"
+    "build": ".node_modules/webpack/bin/webpack.js"
   },
   "repository": {
     "type": "git",
