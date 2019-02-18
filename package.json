@@ -7,7 +7,7 @@
     "lib": "lib"
   },
   "scripts": {
-    "test": "mocha test",
+    "test": "./test.sh",
     "build": "./node_modules/webpack/bin/webpack.js"
   },
   "repository": {
@@ -30,11 +30,14 @@
   },
   "homepage": "https://github.com/alphonse92/microservice-lib#readme",
   "dependencies": {
+    "chai": "^4.2.0",
     "circuit-breaker": "0.0.4",
     "lodash": "^4.17.11",
+    "mocha": "^6.0.0",
     "redis": "^2.8.0",
     "request": "^2.88.0",
     "request-promise-native": "^1.0.5",
+    "sinon": "^7.2.4",
     "winston": "^3.2.1"
   },
   "devDependencies": {
@@ -44,6 +47,7 @@
     "@babel/preset-env": "^7.2.3",
     "@babel/register": "^7.0.0",
     "nodemon": "^1.18.9",
+    "nyc": "^13.3.0",
     "webpack": "^4.29.5",
     "webpack-cli": "^3.2.3"
   }
