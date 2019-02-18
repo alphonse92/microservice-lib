@@ -1,5 +1,5 @@
 {
-  "name": "alphonse92-microservice-lib",
+  "name": "@alphonse92/lib",
   "version": "1.0.0",
   "description": "Library for Javascript prerender microservice ecosystem https://github.com/alphonse92/javascript-prerender/",
   "main": "index.js",
