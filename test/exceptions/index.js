@@ -1,8 +1,7 @@
 import { expect } from 'chai'
+
 import * as CONSTANTS from './../../lib/constants'
 import * as STRINGS from './../../lib/strings'
-import * as LOGGER from './../../lib/logger'
-
 import { InternalError, GatewayError, MicroserviceNotAllowed, MicroserviceDoesNotExist, ChromiumInvalidProtocol, NotAllowedToRender }
   from './../../lib/exceptions';
 
