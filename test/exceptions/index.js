@@ -2,8 +2,8 @@ import { expect } from 'chai'
 
 import * as CONSTANTS from './../../lib/constants'
 import * as STRINGS from './../../lib/strings'
-import { InternalError, GatewayError, MicroserviceNotAllowed, MicroserviceDoesNotExist, ChromiumInvalidProtocol, NotAllowedToRender }
-  from './../../lib/exceptions';
+import { InternalError, GatewayError, MicroserviceNotAllowed, MicroserviceDoesNotExist, ChromiumInvalidProtocol, NotAllowedToRender,HttpException }
+  from './../../lib';
 
 
 describe('lib/exceptions', () => {
@@ -81,6 +81,20 @@ describe('lib/exceptions', () => {
     const message = STRINGS.PRERENDER_NOT_ALLOWED
     const status = CONSTANTS.HttpStatus.UNAUTHORIZED
     it("Should InternalError to be an Error", () => {
+      expect(exception).to.be.an.instanceOf(Error)
+    })
+    it("Should exception message to be equals to " + message, () => {
+      expect(exception.message).to.be.equals(message)
+    })
+    it("Should exception status to be equals to " + status, () => {
+      expect(exception.status).to.be.equals(status)
+    })
+  })
+  describe('HttpException', () => {
+    const status= 400
+    const message='message'
+    const exception = new HttpException(status,message)
+    it("Should HttpException to be an Error", () => {
       expect(exception).to.be.an.instanceOf(Error)
     })
     it("Should exception message to be equals to " + message, () => {
